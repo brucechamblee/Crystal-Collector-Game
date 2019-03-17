@@ -4,7 +4,7 @@ var wins = 0
 // create another empty array for the loses with only ""
 var loses = 0
 // create a variable to hold the total crystal count.
-var finalScore = 0;
+let finalScore = 0;
 
 //make the system get a random number - use math.random?
 var randomNum = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
@@ -21,7 +21,7 @@ var randomGem4 = Math.floor((Math.random() * 12) + 1);
 
 // game reset
 function reset(){
-    var randomNum = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
+    randomNum = Math.floor((Math.random() * (120 - 19 + 1)) + 19);
     $("#randomnum").text(randomNum);
     randomGem1 = Math.floor((Math.random() * 12) + 1);
     randomGem2 = Math.floor((Math.random() * 12) + 1);
@@ -50,7 +50,7 @@ function reset(){
 
     //make an on click function that makes each crystal pick a random number.
     $("#gem1").on("click", function() {
-        finalScore = finalScore + randomGem1;
+        finalScore += randomGem1;
         console.log(finalScore);
         console.log(randomGem1);
         $("#totalscorenumber").text(finalScore);
@@ -63,7 +63,7 @@ function reset(){
     });
     
     $("#gem2").on("click", function() {
-        finalScore = finalScore + randomGem2;
+        finalScore += randomGem2;
         console.log(finalScore);
         console.log(randomGem2);
         $("#totalscorenumber").text(finalScore);
@@ -76,7 +76,7 @@ function reset(){
     });
 
     $("#gem3").on("click", function() {
-        finalScore = finalScore + randomGem3;
+        finalScore += randomGem3;
         console.log(finalScore);
         console.log(randomGem3);
         $("#totalscorenumber").text(finalScore);
@@ -89,7 +89,7 @@ function reset(){
         });
 
     $("#gem4").on("click", function() {
-        finalScore = finalScore + randomGem4;
+        finalScore += randomGem4;
         console.log(finalScore);
         console.log(randomGem4);
         $("#totalscorenumber").text(finalScore);
