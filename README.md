@@ -1,4 +1,7 @@
-# unit-4-game
+# Crystal Collector Game
+
+[Crystal Collector Game] (https://brucechamblee.github.io/Crystal-Collector-Game/)
+
 Made the crystal collector game. In this game, you the user will be given a random number which the computer will generate. Next, the user will click on the crystals below which all have a random number nested inside of them. Each time the user clicks the crystal, the number nested inside the crystal will be added to the users count. If the user can make their number match the radomly guessed number, they win. If they exceed the randomly generated number, they lose.
 
 Next they will click on any crystal to reset the game. A new random number will be calculated and each crystal will generate a new number. 
